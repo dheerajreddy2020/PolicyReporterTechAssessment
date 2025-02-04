@@ -27,6 +27,17 @@ threshold_data_3 = {
 }  # No threshold reaches recall >= 0.9, expected output: None
 
 # Running test cases
-print(best_threshold(threshold_data_1))  # Expected Output: 0.1 (first satisfying recall >= 0.9)
-print(best_threshold(threshold_data_2))  # Expected Output: 0.5 (first satisfying recall >= 0.9)
-print(best_threshold(threshold_data_3))  # Expected Output: None (no threshold meets recall >= 0.9)
+print(f'Test case 1')
+print(threshold_data_1)
+print(f'best threshold for test case 1 is {best_threshold(threshold_data_1)}')  # Expected Output: 0.1 (first satisfying recall >= 0.9)
+
+print('\n')
+print(f'Test case 2')
+print(threshold_data_2)
+print(f'best threshold for test case 1 is {best_threshold(threshold_data_2)}')  # Expected Output: 0.5 (first satisfying recall >= 0.9)
+
+
+print('\n')
+print(f'Test case 3')
+print(threshold_data_3)
+print(f'best threshold for test case 3 is {best_threshold(threshold_data_3)}')  # Expected Output: None (no threshold meets recall >= 0.9)

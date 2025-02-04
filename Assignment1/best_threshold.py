@@ -1,8 +1,8 @@
 def best_threshold(threshold_data):
     """
-    Finds the best confidence threshold that yields recall >= 0.9.
+    Goal is to find the best confidence threshold that yields recall >= 0.9.
     
-    :param threshold_data: Dictionary with keys as thresholds (0.1, 0.2, ... 0.9) 
+    :param threshold_data: expects a dictionary with keys as thresholds (0.1, 0.2, ... 0.9) 
                            and values as dictionaries {TP, TN, FP, FN}.
     :return: Best threshold or None if no threshold meets the criteria.
     """
@@ -17,6 +17,3 @@ def best_threshold(threshold_data):
                 best_thresh = threshold
                 
     return best_thresh
-
-# Example input data
-  # Expected Output: Best threshold satisfying recall >= 0.9
