@@ -100,7 +100,7 @@ print(mod_three_fsm('1111'))  # Output: 0
 ```
 
 ### **Run Tests**
-To execute unit tests, run:
+To execute test cases, run:
 ```sh
 python Assignment2/test_cases.py
 ```
